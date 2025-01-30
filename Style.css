@@ -1,0 +1,134 @@
+/* Style.css */
+
+ * {
+     font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+ }
+
+ body {
+     background-color: #EA738DFF; /* Changed background color */
+     color: #CBCE91FF; /* Changed text color */
+ }
+
+ .quiz,
+ .scores {
+     margin: 50px auto 0 auto;
+     max-width: 400px;
+ }
+
+ #top {
+     color: #CBCE91FF; /* Changed color */
+ }
+
+ .containerNew {
+     border: 5px solid #b0c4de; /* Changed border color to LightSteelBlue */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 580px;
+     width: 50%;
+     transform: translate(-50%, -50%);
+     padding: 10px;
+ }
+
+ p {
+     margin: 15px 15px;
+     color: #5a6f7d; /* Changed instruction text color to Grayish Blue */
+ }
+
+ .landing {
+     text-align: center;
+ }
+
+ .scoresHeader {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     color: #CBCE91FF; /* Changed icon text color */
+ }
+
+ .timer {
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     color: #CBCE91FF; /* Changed icon text color */
+ }
+
+ button {
+     display: inline-block;
+     margin: 10px;
+     cursor: pointer;
+     color: #2c3e50; /* Changed text color to Charcoal Gray */
+     border-radius: 5px;
+     border: 0;
+     padding: 20px;
+     background-color: #fdf6e3; /* Changed background color to #fdf6e3 */
+ }
+
+ button#start {
+     background-color: #4caf50; /* Changed background color to Green */
+ }
+
+ button#start:hover {
+     background-color: #45a049; /* Changed hover color to a darker Green */
+ }
+
+ button#view-high-scores {
+     background-color: #fdf6e3; /* Changed background color to #fdf6e3 */
+ }
+
+ button#view-high-scores:hover {
+     background-color: #f0e68c; /* Changed hover color to a darker shade */
+ }
+
+ .options button {
+     display: block;
+ }
+
+ input[type="text"] {
+     font-size: 100%;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .feedback {
+     font-style: bold;
+     font-size: 120%;
+     margin-top: 20px;
+     padding-top: 15px;
+     color: #fff;
+     border-top: 2px solid #4B0082;
+ }
+
+ ol {
+     padding-left: 15px;
+     max-height: 600px;
+     overflow: auto;
+ }
+
+ li {
+     padding: 5px;
+     list-style: decimal inside none;
+ }
+
+ li:nth-child(odd) {
+     background-color: #b0c4de; /* Changed background color to LightSteelBlue */
+ }
+
+ @media screen and (max-width: 768px) {
+     .containerNew {
+         width: 80%;
+     }
+ }
+
+ @media screen and (max-width: 575px) {
+     .containerNew {
+         width: 90%;
+     }
+
+     .quiz,
+     .scores {
+         max-width: 90%;
+     }
+ }
